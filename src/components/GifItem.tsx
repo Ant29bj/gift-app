@@ -1,4 +1,9 @@
-function GiftItem({ title, url }) {
+type Props = {
+  title: string,
+  url: string
+}
+
+function GiftItem({ title, url }: Props) {
   return (
     <div className="card">
       <p>{title}</p>
@@ -6,5 +11,6 @@ function GiftItem({ title, url }) {
     </div>
   )
 }
+
 
 export default GiftItem;

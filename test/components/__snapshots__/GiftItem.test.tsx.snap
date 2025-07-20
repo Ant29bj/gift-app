@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Test on <GiftItem/> should match with the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <p>
+      mock title
+    </p>
+    <img
+      alt="mock title"
+      src="mock url"
+    />
+  </div>
+</div>
+`;

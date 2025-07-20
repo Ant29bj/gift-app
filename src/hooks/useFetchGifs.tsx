@@ -1,13 +1,13 @@
-import fetchGifts from "../helpers/getGifts";
+import fetchGifs from "../helpers/getGifts";
 import { useState, useEffect } from "react";
 
-function useFetchGifts(category) {
+function useFetchGifs(category: string) {
 
   const [gifts, setGifts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const getImages = async () => {
-    const newIMages = await fetchGifts(category)
+    const newIMages = await fetchGifs(category)
     setGifts(newIMages)
     setIsLoading(false)
   }
@@ -22,4 +22,4 @@ function useFetchGifts(category) {
   }
 }
 
-export default useFetchGifts;
+export default useFetchGifs;

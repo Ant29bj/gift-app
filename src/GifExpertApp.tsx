@@ -1,10 +1,11 @@
 import { useState } from "react";
 import AddCategory from "./components/AddCategory";
-import GiftGrid from "./components/GiftGrid";
+import GiftGrid from "./components/GifGrid";
 
-function GiftExpertApp() {
 
-  const [categories, setCategories] = useState([]);
+function GifExpertApp() {
+
+  const [categories, setCategories] = useState<string[]>([]);
 
   function onAddCategory(newCategory) {
     if (categories.includes(newCategory)) return
@@ -24,4 +25,4 @@ function GiftExpertApp() {
   );
 }
 
-export default GiftExpertApp;
+export default GifExpertApp;

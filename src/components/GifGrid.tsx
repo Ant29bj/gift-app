@@ -1,7 +1,11 @@
-import GiftItem from "./GiftItem";
-import useFetchGifts from "../hooks/useFetchGifts";
+import GiftItem from "./GifItem";
+import useFetchGifts from "../hooks/useFetchGifs";
 
-function GiftGrid({ category }) {
+type Props = {
+  category: string
+}
+
+function GiftGrid({ category }: Props) {
 
   const { gifts, isLoading } = useFetchGifts(category);
 
